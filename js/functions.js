@@ -106,7 +106,7 @@ window.onload = function () {
 
     //Evento para añadir un producto al carrito de la compra
     function anyadirProductoAlCarrito(evento) {
-        // Anyadimos el Nodo a nuestro carrito
+        // Añadimos el Nodo a nuestro carrito
         carrito.push(evento.target.getAttribute('marcador'));
         // Calculo el total
         calcularTotal();
@@ -200,7 +200,7 @@ window.onload = function () {
     }
 
     function cargarCarritoDeLocalStorage() {
-        // ¿Existe un carrito previo guardado en LocalStorage?
+        
         if (miLocalStorage.getItem('carrito') !== null) {
             // Carga la información
             carrito = JSON.parse(miLocalStorage.getItem('carrito'));
