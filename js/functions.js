@@ -57,7 +57,8 @@ window.onload = function () {
             imagen: './img/vino9.jpg'
         }
     ];
-
+    console.log(baseDeDatos);
+    
     let carrito = [];
     let total = 0;
     const DOMitems = document.querySelector('#items');
@@ -187,6 +188,7 @@ window.onload = function () {
     function vaciarCarrito() {
         // Limpiamos los productos guardados
         carrito = [];
+        console.log("carrito eliminado");
         // Renderizamos los cambios
         renderizarCarrito();
         calcularTotal();
